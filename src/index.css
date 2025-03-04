@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+  font-family: 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+/* Product Image Styles */
+.product-image {
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-detail-image {
+  max-height: 400px;
+  object-fit: contain;
+}
+
+/* Cart Item Image */
+.cart-item-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Add smooth transitions */
+.btn, .card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1) !important;
+}
+
+/* Bootstrap Icons */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css");
+
+/* Custom utility classes */
+.text-truncate-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Better mobile experience */
+@media (max-width: 576px) {
+  .product-image {
+    height: 180px;
+  }
+  
+  h1.display-4 {
+    font-size: 2.5rem;
+  }
+}
+
+/* Custom badge positioning */
+.badge-corner {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0.5rem;
+  z-index: 1;
+}
+
+/* Animation for special offers */
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
+
+.special-offer {
+  animation: pulse 2s infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
